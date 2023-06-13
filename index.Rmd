@@ -183,3 +183,17 @@ ggplot(data=musicsales_long2)+
 ```
 
 *I prefer the area chart as it does a nice job of showing the overall trend in music sales over time and how sales peaked in the mid 1990's. Additionally it does a nice job of still showing trends within each music format type.* 
+
+
+# Question 4
+
+```{r}
+require(leaflet)
+
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=-72.655974,
+             lat=41.554203,
+             popup="Data Viz Class")
+```
+
